@@ -4,30 +4,28 @@ from lyricsgenius import Genius
 
 genius = Genius("nBPoYQZo2F3Pn0e4mO7FrCiPkJLLJSXgMKhbmkgAbRFwdfNCDQ5j90Gyi-USRy4H")
 
-def findChorus(geniusLyrics):
-    chorusStart = geniusLyrics.find("[Chorus]") #int for first instance of Chrous
-    chorusString = geniusLyrics[chorusStart:]#substring that starts at first Chorus
+def findChorus(genius_lyrics):
+    chorus_start = genius_lyrics.find("[Chorus") #int for first instance of Chrous
+    chorus_string = genius_lyrics[chorus_start:]#substring that starts at first Chorus
     chorus = ""
-    lines = chorusString.splitlines()
+    lines = chorus_string.splitlines()
     for line in lines:
         if len(line.strip()) == 0:
-            print ("Stopped at " + line)
             break
         elif line.startswith("[") and not (line.startswith("[Chorus")):
-            print ("Stopped at " + line)
             break
         else:
             chorus += line + "\n"
-    print ("Done POG")
+    if chorus == "d\n":
+        chorus = "No chorus found"
     return chorus
 
 print ("Song pls")
-userInput = input()
-song = genius.search_song(userInput)
+user_input = input()
+song = genius.search_song(user_input)
 
-print ("Results for: " + userInput + " by " + song.artist)
+print ("Results for: " + user_input + " by " + song.artist)
 
+genius_lyrics = song.to_text()
 
-geniusLyrics = song.to_text()
-
-print(findChorus(geniusLyrics))
+print(findChorus(genius_lyrics))
