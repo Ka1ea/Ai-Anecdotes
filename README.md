@@ -1,0 +1,2 @@
+# OmegaScrapperOfTheWeb
+yaasiffied scrapper
