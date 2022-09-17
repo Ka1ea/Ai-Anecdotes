@@ -11,12 +11,14 @@ def findChorus(geniusLyrics):
     lines = chorusString.splitlines()
     for line in lines:
         if len(line.strip()) == 0:
+            print ("Stopped at " + line)
             break
-        elif line.startswith("[") and not (line.startswith("[Chorus]")):
+        elif line.startswith("[") and not (line.startswith("[Chorus")):
+            print ("Stopped at " + line)
             break
         else:
             chorus += line + "\n"
-
+    print ("Done POG")
     return chorus
 
 print ("Song pls")
