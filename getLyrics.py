@@ -1,4 +1,3 @@
-
 #pip install lyricsgenius
 
 from lyricsgenius import Genius
@@ -7,20 +6,18 @@ genius = Genius("nBPoYQZo2F3Pn0e4mO7FrCiPkJLLJSXgMKhbmkgAbRFwdfNCDQ5j90Gyi-USRy4
 
 def findChorus(geniusLyrics):
     chorusStart = geniusLyrics.find("Chorus") #int for first instance of Chrous
-    chorusString = geniusLyrics[chorusStart:] #substring that starts at first Chorus
-    lines = chorusString.splitlines()
-
+    chorusString = geniusLyrics[chorusStart:]#substring that starts at first Chorus
+    chorus = ""
+    lines = chorusString.splitlines(True)
     for line in lines:
         if len(line.strip()) == 0:
             break
         elif line.startswith("["):
             break
         else:
-            print(line)
-    
-    #chorusEnd = chorusString.find("\n") #int
-    #chorusString = geniusLyrics[chorusStart:chorusEnd]
-    # return chorusString
+            chorus += line
+
+    return chorus
 
 print ("Song pls")
 userInput = input()
@@ -30,4 +27,4 @@ print ("Results for: " + userInput + " by " + song.artist)
 
 geniusLyrics = song.to_text()
 
-findChorus(geniusLyrics)
+print(findChorus(geniusLyrics))
