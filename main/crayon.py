@@ -1,7 +1,8 @@
 # crayon.py
 # functions that open crayon and get the html for parsing
 # Kalea Gin
-# 9/17/22
+# 9/17/22 
+#ver 1
 
 from os import link
 from time import sleep
