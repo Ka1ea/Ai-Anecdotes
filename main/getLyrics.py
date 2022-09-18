@@ -10,8 +10,7 @@ genius = Genius("nBPoYQZo2F3Pn0e4mO7FrCiPkJLLJSXgMKhbmkgAbRFwdfNCDQ5j90Gyi-USRy4
 def search_song(input):
     lyrics = ""
     song = genius.search_song(input)
-    genius_lyrics = song.to_text()
-    return lyrics
+    return song.lyrics
 
 def find_chorus(lyrics):
     chorus_start = lyrics.find("[Chorus") #int for first instance of Chrous

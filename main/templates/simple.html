@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Song Infographic</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body {
+              padding: 0px;
+              margin: 0px;
+            }
+            ._container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="_container">
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Enter Song Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter a song name!">
+                <input class="btn btn-primary mt-3" type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+            const submitBtn = document.querySelector('input[type="submit"]'); // GET THE BUTTON
+            // WHEN BUTTON CLICK, RUN THIS FUNCTION
+            submitBtn.addEventListener('click', () => {
+              // GET THE VALUE OF INPUT
+              const songName = document.querySelector('input[type="text"]').value;
+              // SEND POST REQUEST TO SERVER
+              fetch("/song", {
+                  method: "POST",
+                  // SONG NAME IS DATA FROM INPUT 
+                  body: JSON.stringify({ songName })
+              }).then(res => res.json()).then(data => {
+                  if(data.songImage == 'NONE' || data.songChorus == 'No chorus found')
+                    return; // IF SONG IMAGE IS NONE, RETURN
+
+                  // GET THE DATA FROM SERVER
+                  let img, p
+                  (img = document.createElement('img')).src = data.songImage;
+                  (p = document.createElement('p')).innerText = data.songChorus;
+                  document.querySelector('.card-body').append(p);
+                  document.querySelector('.card-body').append(img);
+              })
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
