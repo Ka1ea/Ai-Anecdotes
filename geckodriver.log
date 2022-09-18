@@ -1,0 +1,63 @@
+1663508114880	geckodriver	INFO	Listening on 127.0.0.1:60885
+1663508117941	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60886" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofileNPPZte"
+1663508118829	Marionette	INFO	Marionette enabled
+1663508118842	Marionette	INFO	Listening on port 60895
+WebDriver BiDi listening on ws://localhost:60886
+Read port: 60895
+1663508119055	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofileNPPZte\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60886/devtools/browser/6b3519f8-7c5c-4fa7-b31f-2085b5299e84
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 1026 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1663508146436	Marionette	INFO	Stopped listening on port 60895
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1663508471043	geckodriver	INFO	Listening on 127.0.0.1:49884
+1663508474074	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49885" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofilexZvqsK"
+1663508474794	Marionette	INFO	Marionette enabled
+1663508474801	Marionette	INFO	Listening on port 49895
+WebDriver BiDi listening on ws://localhost:49885
+Read port: 49895
+1663508474935	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofilexZvqsK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49885/devtools/browser/ab264011-3a1e-42a3-afc0-689e770286df
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 6158 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1663508514453	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1663508576213	Marionette	INFO	Stopped listening on port 49895
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1663508599613	geckodriver	INFO	Listening on 127.0.0.1:50609
+1663508602630	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50610" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofilep513sb"
+1663508603131	Marionette	INFO	Marionette enabled
+1663508603137	Marionette	INFO	Listening on port 50619
+WebDriver BiDi listening on ws://localhost:50610
+Read port: 50619
+1663508603288	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofilep513sb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50610/devtools/browser/beee7cdf-a936-4c01-a74a-1e9b67e547e5
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 7815 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1663508614023	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 5126 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 264 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 4871 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 2569 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 1786 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/turnvpaid34569/moatvideo.js#_moatApi93690318, line 243: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1663508843000	geckodriver	INFO	Listening on 127.0.0.1:57782
+1663508846037	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57783" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofileCbzcsa"
+1663508846905	Marionette	INFO	Marionette enabled
+1663508846913	Marionette	INFO	Listening on port 57802
+WebDriver BiDi listening on ws://localhost:57783
+Read port: 57802
+1663508847065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rygel\\AppData\\Local\\Temp\\rust_mozprofileCbzcsa\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57783/devtools/browser/db63fffd-aa8d-430b-8838-b5432ea2402e
+1663508860958	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vTbTmvuxvaqY-350E8gd8IPWCIWzlft0eSoVzuBTYYo.js line 2 > eval line 3626 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

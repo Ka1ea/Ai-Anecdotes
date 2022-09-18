@@ -2,4 +2,4 @@
 2. It goes into our awesome chorus finder and returns a list of lines from the chorus 
 3. Random chorus lines are selected
 4. Those chorus lines are made into an image 
-5. Put the chorus back into the website?
+5. Put the chorus back into the website

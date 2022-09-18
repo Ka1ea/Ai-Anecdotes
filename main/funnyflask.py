@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 import json
 from getLyrics import find_chorus, search_song
+from crayon import open_crayon
+from getData import get_image_links
+from randomPhrase import rand_int
 
 app = Flask(__name__)
 
@@ -12,6 +15,7 @@ def song_form():
 def my_form_post():
     data = json.loads(request.data.decode())['songName']
     song_data = search_song(data)
+    chorus_data = ""
     if(song_data == None):
         return jsonify({'songImage': 'NONE'})
     else:
@@ -19,8 +23,11 @@ def my_form_post():
         print(chorus_data)
 
     # Get your image and set the song name
-    # songImage = funky_ai_stuff(chorus_data)
-    songImage = 'https://www.district158.org/wp-content/uploads/2019/04/hhs-front-entrance-dawn.jpg'
+    # songImage = (chorus_data)
+    imgs = open_crayon(chorus_data)
+    
+
+    songImage = imgs[rand_int(imgs)]
 
     return jsonify({'songImage': songImage, 'songChorus': chorus_data})
 
