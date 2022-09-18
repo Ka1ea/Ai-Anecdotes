@@ -10,7 +10,7 @@ import webbrowser
 from selenium import webdriver
 from randomPhrase import rand_int
 from selenium.webdriver.common.keys import Keys
-
+from getData import get_image_links
 
 def open_crayon(line):
     linesX = line.split("/n")
